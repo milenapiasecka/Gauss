@@ -1,7 +1,13 @@
-#ifndef GAUSS_H
-#define GAUSS_H
+#ifndef _GAUSS_H
+#define _GAUSS_H
 
-void gauss(double A[][10], double b[], int n);
+#include "mat_io.h"
+
+/**
+ * Zwraca 0 - eliminacja zakonczona sukcesem
+ * Zwraca 1 - macierz osobliwa - dzielenie przez 0
+ */
+int eliminate(Matrix *mat, Matrix *b);
 
 #endif
 
