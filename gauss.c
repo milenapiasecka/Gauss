@@ -16,8 +16,8 @@ int eliminate(Matrix *mat, Matrix *b) {
 
         /* Sprawdzenie elementu diagonalnego */
         if (mat->data[k][k] == 0.0) {
-		fprintf(stderr, "Zero na przekatnej (wersja A)\n");
-            return 1; // dzielenie przez zero
+            printf("Blad: dzielenie przez zero");
+            return 1; 
         }
 
         for (int i = k + 1; i < n; i++) {
